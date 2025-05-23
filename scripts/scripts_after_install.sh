@@ -1,4 +1,4 @@
 #!/bin/bash
-# Install Node.js dependencies
-cd /home/ec2-user/hello-world-app
-npm install
+# Set permissions for the Nginx web root
+chown -R nginx:nginx /usr/share/nginx/html
+chmod -R 755 /usr/share/nginx/html
